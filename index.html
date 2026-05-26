@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пром Арт Пак - Гофротара у Дніпрі</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+    <!-- Faint Blueprint Grid & Wireframe Box Elements in Deep Teal Scheme -->
+    <div class="blueprint-bg">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(15, 118, 110, 0.03)" stroke-width="1"/>
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)" />
+        </svg>
+    </div>
+
+    <!-- Faint floating wireframe cardboard boxes at screen edges -->
+    <div class="faint-box faint-box-left">
+        <svg viewBox="0 0 200 200" fill="none" stroke="rgba(15, 118, 110, 0.04)" stroke-width="1.5">
+            <!-- Isometric box outline -->
+            <polygon points="100,30 160,60 100,90 40,60" />
+            <polygon points="40,60 100,90 100,160 40,130" />
+            <polygon points="160,60 100,90 100,160 160,130" />
+        </svg>
+    </div>
+    <div class="faint-box faint-box-right">
+        <svg viewBox="0 0 200 200" fill="none" stroke="rgba(15, 118, 110, 0.04)" stroke-width="1.5">
+            <polygon points="100,35 155,62 100,90 45,62" />
+            <polygon points="45,62 100,90 100,155 45,127" />
+            <polygon points="155,62 100,90 100,155 155,127" />
+        </svg>
+    </div>
+
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="container header-inner animate-fade-in-down">
+            <!-- Logo Left -->
+            <div class="logo">
+                <span class="logo-text">Пром Арт Пак</span>
+            </div>
+
+            <!-- Hamburger Nav Toggle (Mobile right) -->
+            <div class="header-right-controls">
+                <!-- Mobile Language Switcher (Compact) -->
+                <div class="lang-switcher mobile-lang">
+                    <button class="lang-btn active" onclick="switchLang('uk')">UA</button>
+                    <span class="lang-divider">/</span>
+                    <button class="lang-btn" onclick="switchLang('en')">EN</button>
+                </div>
+
+                <!-- Mobile Quick Call Icon -->
+                <a href="tel:+380676569270" class="mobile-quick-call" aria-label="Зателефонувати">📞</a>
+                
+                <button class="mobile-nav-toggle" aria-label="Відкрити меню">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+
+            <!-- Responsive Nav Drawer -->
+            <nav class="nav">
+                <!-- Close Button inside mobile drawer -->
+                <button class="mobile-drawer-close" aria-label="Закрити меню">&times;</button>
+                <a href="#about" class="nav-link" data-i18n="nav-about">ПРО КОМПАНІЮ</a>
+                <a href="#contacts" class="nav-link" data-i18n="nav-contacts">КОНТАКТИ</a>
+                
+                <!-- Secondary contact inside drawer for mobile -->
+                <div class="drawer-contact-info">
+                    <span data-i18n="drawer-title">Телефон компанії</span>
+                    <a href="tel:+380676569270">+38 (067) 656-92-70</a>
+                </div>
+            </nav>
+
+            <!-- Language Switcher - Placed exactly between Nav Links and Phone number -->
+            <div class="lang-switcher desktop-lang">
+                <button class="lang-btn active" onclick="switchLang('uk')">UA</button>
+                <span class="lang-divider">/</span>
+                <button class="lang-btn" onclick="switchLang('en')">EN</button>
+            </div>
+
+            <!-- Desktop Phone (Hidden on Mobile) -->
+            <div class="header-contact">
+                <a href="tel:+380676569270" class="phone">+38 (067) 656-92-70</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <div class="container hero" id="about">
+            <!-- Left Side: Core Content -->
+            <div class="hero-text-content animate-fade-in-left">
+                <div class="breadcrumb">
+                    <span data-i18n="breadcrumb-home">Головна</span> &raquo; <span class="current" data-i18n="breadcrumb-current">Гофротара</span>
+                </div>
+                
+                <div class="title-wrapper">
+                    <h1 class="main-title" data-i18n="hero-title">Гофротара у Дніпрі</h1>
+                    <div class="title-bg animate-expand-width"></div>
+                </div>
+
+                <div class="description">
+                    <p data-i18n="hero-desc-1">Компанія <strong>«Пром Арт Пак»</strong> пропонує якісну тару з гофрокартону. Завдяки невисокій ціні, екологічності та досить простій конструкції, наша упаковка широко використовується як для промислових товарів, так і для харчової продукції.</p>
+                    <p data-i18n="hero-desc-2">Ми спеціалізуємося на виробництві різних видів картонної упаковки. Гарантуємо надійність, оперативність виконання замовлень, а також можливість нанесення флексографічного друку з логотипом вашої компанії для підвищення впізнаваності бренду.</p>
+                </div>
+                
+                <div class="hero-cta-btn">
+                    <a href="#contacts" class="cta-button" data-i18n="hero-cta">Зв'язатися з нами</a>
+                </div>
+            </div>
+
+            <!-- Right Side: Hero Image -->
+            <div class="hero-image-content animate-fade-in-right">
+                <img src="hero-image.png" alt="Виробництво картонних коробок Пром Арт Пак" class="hero-image" data-i18n-alt="hero-image-alt">
+            </div>
+        </div>
+
+        <!-- Highly Styled Standalone Responsive Contact Section -->
+        <section id="contacts" class="contacts-section animate-fade-in-up">
+            <div class="container">
+                <div class="contacts-header">
+                    <h2 data-i18n="contacts-title">Зв'яжіться з нами</h2>
+                    <p data-i18n="contacts-subtitle">Залиште заявку або зателефонуйте нам для обговорення вашого замовлення.</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Phone Card -->
+                    <div class="contact-card-box">
+                        <div class="contact-card-icon">📞</div>
+                        <div class="contact-card-info">
+                            <span class="contact-label" data-i18n="label-phone">Телефон</span>
+                            <a href="tel:+380676569270" class="contact-value">+38 (067) 656-92-70</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Email Card -->
+                    <div class="contact-card-box">
+                        <div class="contact-card-icon">✉️</div>
+                        <div class="contact-card-info">
+                            <span class="contact-label" data-i18n="label-email">Email</span>
+                            <a href="mailto:dnfosnova5@gmail.com" class="contact-value">dnfosnova5@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Address Card -->
+                    <div class="contact-card-box">
+                        <div class="contact-card-icon">📍</div>
+                        <div class="contact-card-info">
+                            <span class="contact-label" data-i18n="label-address">Адреса</span>
+                            <address class="contact-value" data-i18n="value-address">м. Дніпро, вулиця Князя Володимира Великого 7a</address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Mobile Drawer Menu & Language Toggle Script -->
+    <script>
+        const navToggle = document.querySelector('.mobile-nav-toggle');
+        const navClose = document.querySelector('.mobile-drawer-close');
+        const navMenu = document.querySelector('.nav');
+        
+        function openMenu() {
+            navMenu.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMenu() {
+            navMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        navToggle.addEventListener('click', openMenu);
+        navClose.addEventListener('click', closeMenu);
+        
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // ------------------ Dynamic Language Translation Logic ------------------
+        const translations = {
+            uk: {
+                "nav-about": "ПРО КОМПАНІЮ",
+                "nav-contacts": "КОНТАКТИ",
+                "drawer-title": "Телефон компанії",
+                "breadcrumb-home": "Головна",
+                "breadcrumb-current": "Гофротара",
+                "hero-title": "Гофротара у Дніпрі",
+                "hero-desc-1": "Компанія <strong>«Пром Арт Пак»</strong> пропонує якісну тару з гофрокартону. Завдяки невисокій ціні, екологічності та досить простій конструкції, наша упаковка широко використовується як для промислових товарів, так і для харчової продукції.",
+                "hero-desc-2": "Ми спеціалізуємося на виробництві різних видів картонної упаковки. Гарантуємо надійність, оперативність виконання замовлень, а також можливість нанесення флексографічного друку з логотипом вашої компанії для підвищення впізнаваності бренду.",
+                "hero-cta": "Зв'язатися з нами",
+                "hero-image-alt": "Виробництво картонних коробок Пром Арт Пак",
+                "contacts-title": "Зв'яжіться з нами",
+                "contacts-subtitle": "Залиште заявку або зателефонуйте нам для обговорення вашого замовлення.",
+                "label-phone": "Телефон",
+                "label-email": "Email",
+                "label-address": "Адреса",
+                "value-address": "м. Дніпро, вулиця Князя Володимира Великого 7a"
+            },
+            en: {
+                "nav-about": "ABOUT US",
+                "nav-contacts": "CONTACTS",
+                "drawer-title": "Company Phone",
+                "breadcrumb-home": "Home",
+                "breadcrumb-current": "Corrugated Packaging",
+                "hero-title": "Corrugated Packaging in Dnipro",
+                "hero-desc-1": "The <strong>\"Prom Art Pack\"</strong> company offers high-quality corrugated cardboard packaging. Thanks to its affordable price, eco-friendliness, and simple design, our packaging is widely used for both industrial products and food items.",
+                "hero-desc-2": "We specialize in manufacturing various types of cardboard packaging. We guarantee reliability, prompt order execution, and the ability to apply flexographic printing with your company logo to increase brand awareness.",
+                "hero-cta": "Contact Us",
+                "hero-image-alt": "Prom Art Pack cardboard box manufacturing facility",
+                "contacts-title": "Contact Us",
+                "contacts-subtitle": "Leave a request or call us to discuss your order details.",
+                "label-phone": "Phone",
+                "label-email": "Email",
+                "label-address": "Address",
+                "value-address": "Dnipro, Kniaz Volodymyr Velykyi Street 7a"
+            }
+        };
+
+        function switchLang(lang) {
+            // Update HTML lang attribute
+            document.documentElement.lang = lang;
+            
+            // Translate all elements with data-i18n attribute
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    element.innerHTML = translations[lang][key];
+                }
+            });
+
+            // Translate alt tags
+            document.querySelectorAll('[data-i18n-alt]').forEach(element => {
+                const key = element.getAttribute('data-i18n-alt');
+                if (translations[lang][key]) {
+                    element.setAttribute('alt', translations[lang][key]);
+                }
+            });
+
+            // Update active states on switcher buttons (both mobile and desktop)
+            document.querySelectorAll('.lang-switcher').forEach(switcher => {
+                switcher.querySelectorAll('.lang-btn').forEach(btn => {
+                    if (btn.textContent.trim().toLowerCase() === lang) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>
